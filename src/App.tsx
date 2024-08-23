@@ -17,12 +17,15 @@ function App() {
 
   const handlePesquisa = async () => { 
     try {
-      const response = await axios.get<GithubData>(`https://api.github.com/users/${username}`);
-      setName(response.data.name);
-      setBio(response.data.bio);
-      setAvatarURL(response.data.avatar_url);
-      setError(""); 
-      
+       axios.get<GithubData>(`https://api.github.com/users/${username}`).then((response => {
+        setName(response.data.name);
+        setBio(response.data.bio);
+        setAvatarURL(response.data.avatar_url);
+        setError(""); 
+        
+
+      }))
+  
 
     } catch (err) {
       setError("Usuário não encontrado. Verifique o nome e tente novamente.");
