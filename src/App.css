@@ -1,0 +1,86 @@
+/* App.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://t4.ftcdn.net/jpg/05/52/20/61/360_F_552206181_KdToyQFo2ZSqBTv2aBiMUJcDVPXaaE3p.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .container-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; 
+  }
+  
+  .container {
+    background: rgba(150, 82, 182, 0.6); 
+    border: 2px solid #6a0dad; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%; 
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+  }
+  
+  header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #147dc4;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ad177b;
+    color: rgb(129, 12, 207);
+    cursor: pointer;
+    margin-top: 10px; 
+  }
+  
+  button:hover {
+    background-color: #b4107e;
+  }
+  
+  .conteudo {
+    margin-top: 20px; 
+  }
+  
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .error {
+    color: rgb(5, 0, 0);
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
